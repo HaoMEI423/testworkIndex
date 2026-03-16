@@ -25,10 +25,12 @@ function playNote(){
 
 function startNote(){
     synth.triggerAttack("C4");
+    document.body.style.backgroundColor = "red";
 }
 
 function endNote(){
     synth.triggerRelease();
+    document.body.style.backgroundColor = "white";
 }
 
 playButton.addEventListener("mousedown",startNote);
