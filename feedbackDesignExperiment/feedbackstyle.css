@@ -1,10 +1,10 @@
 #play-Button{
-    width: 5rem;
+    width: 20rem;
     transition: 2000ms;
 }
 
 #play-Button{
-    cursor: grab;
+    cursor:grabbing;
 }
 
 #play-Button{

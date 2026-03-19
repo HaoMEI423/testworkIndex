@@ -2,6 +2,10 @@
 const stageContainer = document.getElementById("stag-container");
 console.log(stageContainer);
 const circleButton = document.getElementById("circle-button");
+const changeRed = document.getElementById("change-red");
+const changeYellow = document.getElementById("change-yellow");
+const changeBlue = document.getElementById("change-blue")
+
 
 // find stage width
 let stageContainerWidth = stageContainer.offsetWidth;
@@ -40,3 +44,21 @@ function drawNewCircle(){
 }
 
 circleButton.addEventListener("click",drawNewCircle);
+
+// changing our circle colour
+// Radio buttons are selected, because it allow for a exclusive selection, making user choice
+// Limited but certain. A constricted amount of user choice leads to a tighter colour palette
+// to change my colour, I need to find the value od the input clicked, and then update the
+// circle colour const.
+
+function changeColourRadio(clickEvent){
+    // fine the value of the whichever of the radio buttons was clicked
+    let newColour = clickEvent.target.value;
+    // set the new circle colour to that value
+    circleColour = newColour;
+}
+
+// add eventlisteners
+changeRed.addEventListener("click", changeColourRadio);
+changeYellow.addEventListener("click", changeColourRadio);
+changeBlue.addEventListener("click",changeColourRadio);
