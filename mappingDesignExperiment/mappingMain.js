@@ -1,11 +1,9 @@
 // find our elements 
-const stageContainer = document.getElementById("stag-container");
-console.log(stageContainer);
+const stageContainer = document.getElementById("stage-container");
 const circleButton = document.getElementById("circle-button");
 const changeRed = document.getElementById("change-red");
 const changeYellow = document.getElementById("change-yellow");
-const changeBlue = document.getElementById("change-blue")
-
+const changeBlue = document.getElementById("change-blue");
 
 // find stage width
 let stageContainerWidth = stageContainer.offsetWidth;
@@ -26,14 +24,14 @@ const stage = new Konva.Stage({
 })
 
 // create layer
-firstLayer = new Konva.Layer();
+const firstLayer = new Konva.Layer();
 
 // add the layer to the stage
 stage.add(firstLayer);
 
 // add inetaction to button
 function drawNewCircle(){
-    circle = new Konva.Circle({
+    const circle = new Konva.Circle({
     x: stage.width() * Math.random(),
     y: stage.height() * Math.random(),
     radius: 50 * Math.random(),
