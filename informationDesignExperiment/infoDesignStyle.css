@@ -4,12 +4,12 @@
 /*define custom variables*/
 :root{
     /* Late Night Bath Palette by sukinapan https://lospec.com/palette-list/late-night-bath */
-    --col01: #888b93;
-    --col02: #f0f6f0;
+    --col01: hsl(0, 0%, 41%);
+    --col02: #77ff00;
     --col03: #ffffff;
     --col04: #000000;
-    --col05: #000000;
-    --col06: #f69197;
+    --col05: #292700;
+    --col06: #cbcf59;
     --border: solid 2px var(--col04);
 }
 

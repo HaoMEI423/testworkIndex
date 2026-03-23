@@ -25,7 +25,7 @@ function playNote(){
 
 function startNote(){
     synth.triggerAttack("C4");
-    document.body.style.backgroundColor = "blue";
+    document.body.style.backgroundColor = "tomato";
 }
 
 function endNote(){
