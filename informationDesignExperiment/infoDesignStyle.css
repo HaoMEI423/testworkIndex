@@ -5,11 +5,11 @@
 :root{
     /* Late Night Bath Palette by sukinapan https://lospec.com/palette-list/late-night-bath */
     --col01: hsl(0, 0%, 41%);
-    --col02: #77ff00;
+    --col02: #e2e7bf;
     --col03: #ffffff;
     --col04: #000000;
     --col05: #292700;
-    --col06: #cbcf59;
+    --col06: #e2e7bf;
     --border: solid 2px var(--col04);
 }
 
