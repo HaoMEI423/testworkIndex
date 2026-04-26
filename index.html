@@ -87,5 +87,67 @@
         <img src="./assets/illustrator.png" alt="Adobe Illustrator">
         <img src="./assets/photoshop.webp" alt="Adobe Photoshop">
 
+    <h1>Assignment 2</h1>
+
+    <h2>Conceptual Response</h2>
+        <p>My studio project is an interactive web-based tool designed for the creative context of UI prototyping and interaction design. It explores how button interactions can become more expressive through the combined use of two core interaction design principles: feedback and mapping.
+        <p>The tool centres around a large interactive button surrounded by a series of smaller controls. Each smaller button represents a specific feedback behaviour—such as shake, scale, rotate, glow, or colour change—and can be previewed individually. Checkboxes allow users to select one or more effects, which are then mapped directly to the central button when it is pressed. This creates a clear relationship between user input, system state, and visual output.</p>
+        <p>Feedback is the primary focus of the project. Rather than limiting feedback to a single predefined response, the prototype allows multiple forms of visual and motion-based feedback to be layered together. This helps users observe how different combinations affect the perceived responsiveness, personality, and clarity of an interface.</p>
+        <p>Mapping plays an equally important role. The radial layout establishes a strong spatial relationship between the surrounding controls and the central button. Each control directly corresponds to a specific feedback behaviour, making the system easy to understand and explore. The interface visually communicates cause and effect: selecting an option changes the behaviour of the central button in a predictable way.</p>
+        <p>The novelty of the project lies in turning interface feedback into something modular, interactive, and user-configurable. Instead of passively experiencing feedback, users actively construct it. </p>
+    
+    <h2>Technical Approach</h2>
+    <p>My project was built using HTML, CSS, and JavaScript. HTML provides the basic structure, including the central button, the smaller preview buttons, and the checkboxes used for selecting different feedback effects. CSS controls the overall layout, visual style, and animations, while JavaScript manages all user interactions and dynamic behaviour.</p>
+    <p>The main technical challenge was creating a system where multiple feedback effects could be selected and combined. To solve this, I used JavaScript event listeners to detect button clicks and checkbox selections. Each effect is stored using custom data attributes, which makes the code more flexible and easier to expand. When the central button is pressed, JavaScript checks which options are active and applies the corresponding visual changes.</p>
+    <p>CSS custom properties were used to control transformations such as movement, scaling, rotation, and colour changes. This made it possible to update the button's appearance dynamically through JavaScript without rewriting the entire style. Additional visual effects, such as glow, were handled using CSS classes.</p>
+    <p>The smaller buttons also work as live previews. Each one triggers its own animation, helping users understand the effect before applying it to the main button. </p>
+
+    <h2>Project Prototype</h2>
+    <a href="https://feedback-prototype.netlify.app/">Link to my project prototype</a>
+
+
+    <h2>Peer User Testing Reflection</h2>
+    <a href="https://forms.office.com/r/aLuuq1AEQh">Link to Peer user testing form</a>
+    <p>
+        Peer testing revealed several valuable insights about the current prototype. While most participants found the interface engaging and easy to explore, a common issue was the relationship between the small buttons, checkboxes, and the central button. Some users understood the interaction immediately, but others were unsure how the system worked at first. In particular, several participants did not realise that selecting a checkbox required them to then click the central button to trigger the combined effects. This suggests that the current mapping between input and outcome is not yet fully intuitive.
+    </p>
+    <p>
+        This feedback highlighted an important tension in the design. I initially aimed to minimise textual instructions in order to create a more playful and immersive experience. However, the testing showed that removing too much guidance can make the interaction less discoverable. Moving forward, I plan to introduce subtle instructional cues and clearer visual affordances while still maintaining a clean and exploratory interface.
+    </p>
+    <p>
+        One significant change I intend to implement is replacing the checkbox selection system with a drag-and-drop interaction. Users will be able to drag the smaller feedback buttons directly onto the central button to apply their effects. This will create a much stronger sense of mapping, making the relationship between controls and output immediately understandable. It also aligns more naturally with the experimental and playful nature of the project.
+    </p>
+    <p>
+        Participants also suggested expanding the range of available feedback. Many wanted audio feedback, adjustable effect intensity, and greater control over colours and animation strength. Others expressed interest in having multiple variations within each feedback category. In response, I plan to introduce additional effects, parameter controls, and customisation options to support deeper experimentation.
+    </p>
+    <p>
+        Overall, peer testing confirmed the strengths of the current concept while clearly identifying opportunities for improvement. The next iteration will focus on improving discoverability, strengthening mapping through drag-and-drop interaction, and expanding the expressive possibilities of the feedback system.
+    </p>
+
+    <h2>Timeline</h2>
+        <h3>Week 1-2</h3>
+        <p>Experiencing with information design</p>
+        <h3>Week 3-4</h3>
+        <p>Experiencing with feedback design and mapping design.</p>
+        <p>Construct the function of the project.</p>
+        <h3>Week 5-6</h3>
+        <p>Construct buttons, add feecback effect on each of the buttons.</p>
+        <p>Create tick boxes, and realte the tick box to the center button allow the feecback effects could apply to the center button.</p>
+        <p>Prepare for peer user testing.</p>
+        <h3>Week 7</h3>
+        <p>Peer user testing.</p>
+        <p>Reflection on peer user testing.</p>
+        <h3>Week 8</h3>
+        <p>Add subtle text guidance and improve button labels. The goal is to help new users understand how to interact without overwhelming the interface.</p>
+        <p>Refine the visual design by improving contrast, enlarging the main button, and enhancing the overall layout for better accessibility.</p>
+        <h3>Week 9</h3>
+        <p>Keep refining the visual design.</p>
+        <p>Redesign the interaction flow by replacing checkboxes with drag-and-drop. This will make the relationship between small buttons and the main button much clearer.(This might continue within several weeks.)</p>
+        <h3>Week 10</h3>
+        <p>Expand the feedback library by introducing new effects, including sound feedback and additional animation variations.</p>
+        <h3>Week 11</h3>
+        <p>Allow users to customise effect intensity, speed, and colour. This will create a more flexible and personalised experience.</p>
+        <h3>Week 12-13</h3>
+        <p>Finalysing and debug the project.</p>
 </body>
 </html>
